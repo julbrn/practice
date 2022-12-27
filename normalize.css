@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+body {
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+ul {
+  list-style: none;
+}
