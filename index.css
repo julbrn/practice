@@ -7,12 +7,18 @@
   --font-color-dark: #22343d;
   --accent-green: #02897a;
   --accent-grey: #f3f3f3;
+  --main-background: #f3f3f3;
 }
 
 body {
+  max-width: 1400px;
   font-family: "Poppins", Verdana, sans-serif;
   padding: 0 145px;
   color: var(--font-color-dark);
+}
+
+hr {
+  border: 1px solid #e7e7e7;
 }
 
 .header {
@@ -82,7 +88,7 @@ body {
 }
 
 .color-scheme_circle3 {
-  border-radius: 0 50% 50% 0;
+  border-radius: 0 12rem 12rem 0;
   background-color: var(--accent-green);
   height: 14px;
   width: 7px;
@@ -90,6 +96,7 @@ body {
 }
 
 .button {
+  font-family: "Poppins", Verdana, sans-serif;
   height: 53px;
   padding: 0 25px;
   outline: none;
@@ -265,6 +272,7 @@ body {
 }
 
 .price__subscription {
+  max-width: 323px;
   padding: 24px 73px 32px;
   border-radius: 8px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
@@ -352,4 +360,67 @@ body {
 .price__subscription:hover .price__subscription-price-number,
 .price__subscription:hover .price__subscription-price-currency {
   color: var(--light);
+}
+
+.faq {
+  text-align: center;
+  padding-top: 115px;
+  padding-bottom: 115px;
+}
+
+.faq__question {
+  font-family: "Poppins", Verdana, sans-serif;
+  background-color: var(--light);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 40px;
+  transition: all 0.2s ease;
+}
+
+.faq__question:after {
+  content: url(/images/plus_circle.png);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 0;
+}
+
+.faq__question_active:after {
+  content: url(/images/minus_circle.png);
+}
+
+.faq__subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55;
+  padding-top: 8px;
+  padding-bottom: 50px;
+}
+
+.faq__panel {
+  display: none;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-top: 14px;
+  padding-bottom: 24px;
+  overflow: hidden;
+}
+
+.faq__question:hover {
+  color: var(--accent-green);
+}
+
+.faq__panel_active {
+  display: block;
 }
