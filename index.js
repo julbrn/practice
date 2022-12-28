@@ -6,3 +6,8 @@ questions.forEach((question) => {
     nextElement.classList.toggle("faq__panel_active");
   });
 });
+
+const colorSwitcher = document.querySelector(".color-scheme");
+colorSwitcher.addEventListener("click", function () {
+  document.documentElement.classList.toggle("dark");
+});

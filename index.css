@@ -3,18 +3,28 @@
 
 :root {
   --light: #fff;
-  --bg-color-dark: #1f2e35;
-  --font-color-dark: #22343d;
+  /*   --bg-color-dark: #1f2e35;
+  --font-color-dark: #22343d; */
   --accent-green: #02897a;
   --accent-grey: #f3f3f3;
-  --main-background: #f3f3f3;
+}
+
+:root.light {
+  --bg-color: #fff;
+  --text-color: #22343d;
+}
+
+:root.dark {
+  --bg-color: #1f2e35;
+  --text-color: #fff;
 }
 
 body {
   max-width: 1400px;
   font-family: "Poppins", Verdana, sans-serif;
   padding: 0 145px;
-  color: var(--font-color-dark);
+  color: var(--text-color);
+  background-color: var(--bg-color);
 }
 
 hr {
@@ -61,6 +71,8 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  border: none;
 }
 
 .color-scheme:hover {
@@ -72,27 +84,33 @@ hr {
   background-color: var(--accent-green);
   height: 20px;
   width: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
 }
 
-.color-scheme_circle2 {
+.color-scheme_circle1:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
   border-radius: 50%;
   background-color: var(--accent-grey);
   height: 16px;
   width: 16px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
 }
 
-.color-scheme_circle3 {
+.color-scheme_circle1:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
   border-radius: 0 12rem 12rem 0;
   background-color: var(--accent-green);
   height: 14px;
   width: 7px;
-  margin-right: 1px;
 }
 
 .button {
@@ -118,7 +136,7 @@ hr {
   background-color: transparent;
   outline: 1px solid #bcd0e5;
   outline-offset: -1px;
-  color: var(--font-color-dark);
+  color: var(--text-color);
 }
 
 .button:hover {
@@ -272,6 +290,7 @@ hr {
 }
 
 .price__subscription {
+  color: #22343d;
   max-width: 323px;
   padding: 24px 73px 32px;
   border-radius: 8px;
@@ -280,6 +299,7 @@ hr {
   flex-direction: column;
   align-items: center;
   transition: all 0.3s ease;
+  background-color: var(--light);
 }
 
 .price__subscription-title {
@@ -370,7 +390,8 @@ hr {
 
 .faq__question {
   font-family: "Poppins", Verdana, sans-serif;
-  background-color: var(--light);
+  background-color: var(--bg-color);
+  color: var(--text-color);
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -387,7 +408,7 @@ hr {
 }
 
 .faq__question:after {
-  content: url(/images/plus_circle.png);
+  content: url(images/plus_circle.png);
   width: 24px;
   height: 24px;
   position: absolute;
@@ -395,7 +416,7 @@ hr {
 }
 
 .faq__question_active:after {
-  content: url(/images/minus_circle.png);
+  content: url(images/minus_circle.png);
 }
 
 .faq__subtitle {
