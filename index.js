@@ -7,7 +7,13 @@ questions.forEach((question) => {
   });
 });
 
-const colorSwitcher = document.querySelector(".color-scheme");
+const colorSwitcher = document.querySelector(".color-theme");
+const logo = document.querySelector(".logo__url");
 colorSwitcher.addEventListener("click", function () {
   document.documentElement.classList.toggle("dark");
+  if (document.documentElement.classList.contains("dark")) {
+    logo.src = "images/logo-dark.svg";
+  } else {
+    logo.src = "images/logo.svg";
+  }
 });

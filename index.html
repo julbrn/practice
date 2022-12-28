@@ -13,7 +13,7 @@
   <body>
     <header class="header">
       <a href="/" class="logo">
-        <img src="images/logo.svg" alt="logo" />
+        <img class="logo__url" src="images/logo.svg" alt="logo" />
       </a>
       <nav class="header__nav">
         <ul class="header__nav-items">
@@ -26,8 +26,8 @@
           Sign In
         </button>
         <button class="button button_place_header">Sign Up</button>
-        <button class="color-scheme">
-          <span class="color-scheme_circle1"> </span>
+        <button class="color-theme" aria-label="change color theme">
+          <span class="color-theme_circle1"> </span>
         </button>
       </nav>
     </header>
@@ -43,6 +43,7 @@
             <button class="button">Get started</button>
             <a
               href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              aria-label="watch a video"
               class="link-video"
               target="popup"
               onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ','popup','width=500,height=500,scrollbars=no,resizable=no'); return false;"

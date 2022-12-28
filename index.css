@@ -39,6 +39,11 @@ hr {
   height: 80px;
 }
 
+.logo {
+  width: 178px;
+  height: 36px;
+}
+
 .header__nav {
   display: flex;
   align-items: center;
@@ -63,7 +68,7 @@ hr {
   cursor: pointer;
 }
 
-.color-scheme {
+.color-theme {
   border-radius: 50%;
   background-color: var(--accent-grey);
   height: 32px;
@@ -75,11 +80,11 @@ hr {
   border: none;
 }
 
-.color-scheme:hover {
+.color-theme:hover {
   cursor: pointer;
 }
 
-.color-scheme_circle1 {
+.color-theme_circle1 {
   border-radius: 50%;
   background-color: var(--accent-green);
   height: 20px;
@@ -87,7 +92,7 @@ hr {
   position: relative;
 }
 
-.color-scheme_circle1:before {
+.color-theme_circle1:before {
   content: "";
   position: absolute;
   left: 0;
@@ -101,7 +106,7 @@ hr {
   width: 16px;
 }
 
-.color-scheme_circle1:after {
+.color-theme_circle1:after {
   content: "";
   position: absolute;
   top: 0;
