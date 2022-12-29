@@ -21,10 +21,17 @@
 
 body {
   max-width: 1400px;
+  min-width: 411px;
   font-family: "Poppins", Verdana, sans-serif;
   padding: 0 145px;
   color: var(--text-color);
   background-color: var(--bg-color);
+}
+
+@media screen and (max-width: 1175px) {
+  body {
+    padding: 0 41px;
+  }
 }
 
 hr {
@@ -47,6 +54,12 @@ hr {
 .header__nav {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 1175px) {
+  .header__nav {
+    display: none;
+  }
 }
 
 .header__nav-items {
@@ -158,12 +171,21 @@ hr {
 
 .hero {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  width: 100%;
 }
 
 .hero__title {
   font-size: 40px;
   font-weight: 700;
   line-height: 1.5;
+}
+
+@media screen and (max-width: 1175px) {
+  .hero__title {
+    font-size: 36px;
+  }
 }
 
 .hero__para {
@@ -185,9 +207,26 @@ hr {
   justify-content: center;
 }
 
-.hero__img {
-  max-width: 600px;
-  height: auto;
+@media screen and (max-width: 1175px) {
+  .hero__column-left {
+    text-align: center;
+  }
+}
+
+.hero__column-right {
+  flex-grow: 100;
+  min-width: 338px;
+  height: 555px;
+  background-image: url("images/hero-img.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@media screen and (max-width: 1175px) {
+  .hero__column-right {
+    height: 310px;
+  }
 }
 
 .link-video {
@@ -221,6 +260,12 @@ hr {
   margin-right: 8px;
 }
 
+@media screen and (max-width: 1175px) {
+  .triangle {
+    margin-right: 1px;
+  }
+}
+
 .tests {
   display: flex;
   flex-direction: column;
@@ -241,7 +286,7 @@ hr {
   line-height: 1.62;
 }
 
-.tests_type-title {
+.tests__type-title {
   font-size: 22px;
   font-weight: 600;
   line-height: 1.5;
@@ -249,7 +294,14 @@ hr {
   margin-bottom: 13px;
 }
 
-.tests_type-image {
+@media screen and (max-width: 1175px) {
+  .tests__type-title {
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+}
+
+.tests__type-image {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   width: 50px;
   height: 50px;
@@ -264,12 +316,33 @@ hr {
   margin-top: 66px;
   margin-bottom: 34px;
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1175px) {
+  .tests__types {
+    justify-content: center;
+    margin-top: 50px;
+  }
 }
 
 .tests__type {
-  max-width: 240px;
+  width: 240px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1175px) {
+  .tests__type:not(:first-of-type) {
+    margin-top: 54px;
+  }
+}
+
+@media screen and (max-width: 1175px) {
+  .tests__type {
+    text-align: center;
+  }
 }
 
 .price {
@@ -280,11 +353,25 @@ hr {
   width: 100%;
 }
 
+@media screen and (max-width: 1175px) {
+  .price {
+    margin-top: 98px;
+  }
+}
+
 .price__container {
   display: flex;
+  flex-wrap: wrap;
+  column-gap: 15px;
   padding-top: 50px;
   width: 100%;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 1175px) {
+  .price__container {
+    justify-content: center;
+  }
 }
 
 .price__subtitle {
@@ -305,6 +392,12 @@ hr {
   align-items: center;
   transition: all 0.3s ease;
   background-color: var(--light);
+}
+
+@media screen and (max-width: 1175px) {
+  .price__subscription:not(:first-of-type) {
+    margin-top: 32px;
+  }
 }
 
 .price__subscription-title {
@@ -393,6 +486,11 @@ hr {
   padding-bottom: 115px;
 }
 
+@media screen and (max-width: 1175px) {
+  .faq {
+    padding-top: 100px;
+  }
+}
 .faq__question {
   font-family: "Poppins", Verdana, sans-serif;
   background-color: var(--bg-color);
