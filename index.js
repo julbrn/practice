@@ -19,10 +19,3 @@ colorSwitcher.addEventListener("click", function () {
     logo.src = "images/logo.svg";
   }
 });
-
-const burger = document.querySelector(".burger");
-const burgerLinks = document.querySelector(".header__nav");
-
-burger.addEventListener("click", () => {
-  burgerLinks.classList.toggle("active");
-});

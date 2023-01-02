@@ -18,11 +18,8 @@
       <button class="color-theme" aria-label="change color theme">
         <span class="color-theme_circle1"> </span>
       </button>
-      <a href="#" class="burger">
-        <span class="burger__line"></span>
-        <span class="burger__line"></span>
-        <span class="burger__line"></span>
-      </a>
+      <input type="checkbox" class="burger" id="burger" />
+      <label for="burger" class="burger__lines"></label>
       <nav class="header__nav">
         <ul class="header__nav-items">
           <li class="header__nav-item">Product</li>
@@ -30,10 +27,12 @@
           <li class="header__nav-item">Pricing</li>
           <li class="header__nav-item">Resources</li>
         </ul>
-        <button class="button button_inactive button_place_header">
-          Sign In
-        </button>
-        <button class="button button_place_header">Sign Up</button>
+        <div class="header__buttons">
+          <button class="button button_inactive button_place_header">
+            Sign In
+          </button>
+          <button class="button button_place_header">Sign Up</button>
+        </div>
       </nav>
     </header>
     <main class="main">
