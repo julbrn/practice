@@ -256,9 +256,9 @@ hr {
     visibility: hidden;
     opacity: 0;
     position: absolute;
-    top: 10vh;
+    top: max(10vh, 75px);
     right: 2vw;
-    height: 36vh;
+    height: max(40vh, 250px);
     width: min(98%, 420px);
     align-items: center;
     justify-content: center;
