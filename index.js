@@ -7,6 +7,8 @@ questions.forEach((question) => {
   });
 });
 
+document.documentElement.classList.add("light");
+
 const colorSwitcher = document.querySelector(".color-theme");
 const logo = document.querySelector(".logo__url");
 colorSwitcher.addEventListener("click", function () {
@@ -16,4 +18,11 @@ colorSwitcher.addEventListener("click", function () {
   } else {
     logo.src = "images/logo.svg";
   }
+});
+
+const burger = document.querySelector(".burger");
+const burgerLinks = document.querySelector(".header__nav");
+
+burger.addEventListener("click", () => {
+  burgerLinks.classList.toggle("active");
 });
