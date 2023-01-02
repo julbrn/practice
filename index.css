@@ -176,9 +176,9 @@ hr {
   width: 100%;
 }
 
-@media screen and (max-width: 1175px) {
+@media screen and (max-width: 880px) {
   .hero {
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 
@@ -206,7 +206,7 @@ hr {
   margin-top: 45px;
 }
 
-@media screen and (max-width: 876px) {
+@media screen and (max-width: 880px) {
   .hero__buttons {
     justify-content: space-between;
   }
