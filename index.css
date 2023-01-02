@@ -176,6 +176,12 @@ hr {
   width: 100%;
 }
 
+@media screen and (max-width: 1175px) {
+  .hero {
+    justify-content: space-between;
+  }
+}
+
 .hero__title {
   font-size: 40px;
   font-weight: 700;
@@ -198,6 +204,12 @@ hr {
 .hero__buttons {
   display: inline-flex;
   margin-top: 45px;
+}
+
+@media screen and (max-width: 876px) {
+  .hero__buttons {
+    justify-content: space-between;
+  }
 }
 
 .hero__column-left {
@@ -313,7 +325,6 @@ hr {
 }
 
 .tests__types {
-  margin-top: 66px;
   margin-bottom: 34px;
   width: 100%;
   display: flex;
@@ -324,18 +335,18 @@ hr {
 @media screen and (max-width: 1175px) {
   .tests__types {
     justify-content: center;
-    margin-top: 50px;
   }
 }
 
 .tests__type {
+  margin-top: 66px;
   width: 240px;
   overflow: hidden;
 }
 
-@media screen and (max-width: 1175px) {
-  .tests__type:not(:first-of-type) {
-    margin-top: 54px;
+@media screen and (max-width: 561px) {
+  .tests__type {
+    margin-top: 50px;
   }
 }
 
@@ -371,6 +382,7 @@ hr {
 @media screen and (max-width: 1175px) {
   .price__container {
     justify-content: center;
+    padding-top: 0;
   }
 }
 
@@ -395,7 +407,7 @@ hr {
 }
 
 @media screen and (max-width: 1175px) {
-  .price__subscription:not(:first-of-type) {
+  .price__subscription {
     margin-top: 32px;
   }
 }
