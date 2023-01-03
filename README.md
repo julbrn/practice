@@ -10,4 +10,4 @@
 
 ### Как посмотреть
 
-- [Link to **GitHub Pages**](https://julbrn.github.io/practice/)
+- [Ссылка на **GitHub Pages**](https://julbrn.github.io/practice/)
