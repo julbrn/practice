@@ -19,3 +19,18 @@ colorSwitcher.addEventListener("click", function () {
     logo.src = "images/logo.svg";
   }
 });
+
+
+const scrollUp = document.querySelector(".up__img");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 600) {
+    console.log(20)
+    scrollUp.style.display = "block"
+  }
+  else {
+    scrollUp.style.display = "none"
+  }
+})
+
+

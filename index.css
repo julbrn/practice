@@ -217,11 +217,13 @@ hr {
   font-size: 16px;
   font-weight: 600;
   transition: all 0.4s linear;
+  min-width: 175px;
 }
 
 .button_place_header {
   height: 43px;
   margin-left: 20px;
+  min-width: 102px;
 }
 
 .header__buttons {
@@ -682,4 +684,16 @@ hr {
 
 .faq__panel_active {
   display: block;
+}
+
+.up {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+
+.up__img {
+  height: 50px;
+  width: 50px;
+  display: none;
 }
